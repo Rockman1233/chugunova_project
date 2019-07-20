@@ -6,28 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Box personal portfolio Template</title>
+    <title>Дизайн бюро - Простые пространства</title>
     <link rel="icon" href="{{ asset('img/fav.png') }}" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/ionicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('ionicons/css/ionicons.min.css') }}" rel="stylesheet">
 
     <!-- main css -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     <link href="{{ asset('css/_variables.scss') }}" rel="stylesheet">
     <link href="{{ asset('css/app.scss') }}" rel="stylesheet">
-
-    <!-- JQuery -->
-    <script src="{{ asset('js/jquery-2.1.1.js') }}"></script>
-
+    <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- modernizr -->
     <script src="{{ asset('js/modernizr.js') }}"></script>
 
     <script src="{{ asset('js/animated-headline.js') }}"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
     <script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>

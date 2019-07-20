@@ -11,8 +11,6 @@
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
     <!-- end back to top -->
 
-    <!-- jQuery -->
-    <script src="js/jquery-2.1.1.js"></script>
     <!--  plugins -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/menu.js"></script>
