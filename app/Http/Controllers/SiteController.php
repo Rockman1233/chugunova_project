@@ -11,10 +11,10 @@ class SiteController extends Controller
     public function index()
     {
 
-        //$posts = Post::all(['title']);
-        //foreach ($posts as $post){
-        //    echo $post->title;
-        //}
-        return view('site.index');
+        $posts = Post::all();
+
+        return view('site.index', [
+            'posts' => $posts
+        ]);
     }
 }
