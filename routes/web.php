@@ -32,3 +32,7 @@ Route::get('single-project', function () {
 Route::get('portfolio', function () {
     return view('site.portfolio');
 });
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
