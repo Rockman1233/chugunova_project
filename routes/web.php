@@ -13,9 +13,10 @@
 
 Route::get('/', 'SiteController@index');
 
-Route::get('about', function () {
-    return view('site.about');
-});
+Route::get('about', 'SiteController@about');
+
+Route::get('portfolio', 'SiteController@portfolio');
+
 
 Route::get('contact', function () {
     return view('site.contact');
@@ -29,9 +30,6 @@ Route::get('single-project', function () {
     return view('site.single-project');
 });
 
-Route::get('portfolio', function () {
-    return view('site.portfolio');
-});
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
