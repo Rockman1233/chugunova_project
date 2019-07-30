@@ -60,8 +60,7 @@
         <!-- end box header -->
 
         <!-- nav -->
-        @include('site.elements.menu')
-        @yield('menu')
+        {!! menu('main', 'site.elements.menu') !!}
         <!-- end nav -->
 
     </div>
