@@ -17,14 +17,13 @@ Route::get('about', 'SiteController@about');
 
 Route::get('portfolio', 'SiteController@portfolio');
 
+Route::get('services', 'SiteController@services');
+
 
 Route::get('contact', function () {
     return view('site.contact');
 });
 
-Route::get('services', function () {
-    return view('site.services');
-});
 
 Route::get('single-project', function () {
     return view('site.single-project');

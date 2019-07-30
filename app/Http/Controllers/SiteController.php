@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Post;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Http\Request;
 use TCG\Voyager\Models\Category;
+use App\Service;
 use TCG\Voyager\Models\Page;
 
 class SiteController extends Controller
@@ -36,6 +35,14 @@ class SiteController extends Controller
         return view('site.portfolio', [
             'projects' => $projects,
             'categories' => $categories
+        ]);
+    }
+
+    public function services()
+    {
+        $services = Service::all();
+        return view('site.services', [
+            'services' => $services
         ]);
     }
 }
