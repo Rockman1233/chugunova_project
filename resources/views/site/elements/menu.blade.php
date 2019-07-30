@@ -54,5 +54,11 @@
             </li>
         @endforeach
 
+        <li class="box-label">Follow me</li>
+        <li class="box-social"><a href="#0"><i class="fa fa-facebook"></i></a></li>
+        <li class="box-social"><a href="#0"><i class="fa fa-instagram"></i></a></li>
+        <li class="box-social"><a href="#0"><i class="fa fa-twitter"></i></a></li>
+        <li class="box-social"><a href="#0"><i class="fa fa-vk"></i></a></li>
+
     </ul>
 </nav>
