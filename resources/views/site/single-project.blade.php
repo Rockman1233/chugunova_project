@@ -28,10 +28,7 @@
 
         <div class="col-md-3">
             <ul class="cat-ul">
-                <li><i class="ion-ios-circle-filled"></i> Design</li>
-                <li><i class="ion-ios-circle-filled"></i> consectetur adipiscing</li>
-                <li><i class="ion-ios-circle-filled"></i> et gubernationis</li>
-                <li><i class="ion-ios-circle-filled"></i> Aliter enim nosmet</li>
+                <li><i class="fa fa-star"></i> {{ $project->getCategory()->slug }}</li>
             </ul>
             <div class="h-10"></div>
             <h4>Share</h4>
