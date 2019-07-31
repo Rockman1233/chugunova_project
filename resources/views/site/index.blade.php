@@ -26,7 +26,7 @@
             <div class="no-padding portfolio_container">
                 @foreach($posts as $ndx => $post)
                     <div class="no-padding @if($loop->iteration % 3 == 0)col-md-6 col-sm-12 photography @else col-md-3 col-sm-6 fashion logo @endif">
-                        <a href="single-project" class="portfolio_item">
+                        <a href="single-project/{{ $post->slug }}" class="portfolio_item">
                             <img src="{{ Voyager::image( $post->image ) }}" alt="image" class="img-responsive" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">

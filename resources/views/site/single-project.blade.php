@@ -4,8 +4,8 @@
 
     <!-- top-bar -->
     <div class="top-bar">
-        <h1>project title</h1>
-        <p><a href="#">Home</a> / <a href="#">portfolio</a> / project title</p>
+        <h1>{{ $project->title }}</h1>
+        <p><a href="#">Home</a> / <a href="#">portfolio</a> / {{ $project->title }}</p>
     </div>
     <!-- end top-bar -->
     
@@ -17,15 +17,13 @@
         </div>
 
         <div class="col-md-12">
-            <h3 class="text-uppercase">project title</h3>
-            <h5>Creative & Lorem ipsum dolor sit amet</h5>
+            <h3 class="text-uppercase">{{ $project->title }}</h3>
+            <h5>{{ $project->excerpt }}</h5>
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-9">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia-, bene laudata virtus voluptatis aditus ultimum cum ultimo sapientiae Et nemo nimium beatus est </p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia </p>
+            {{ $project->body }}
         </div>
 
         <div class="col-md-3">
@@ -38,10 +36,10 @@
             <div class="h-10"></div>
             <h4>Share</h4>
             <ul class="social-ul">
-                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="fa fa-facebook"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="fa fa-instagram"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="fa fa-twitter"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="fa fa-vk"></i></a></li>
             </ul>
         </div>
     </div>

@@ -19,14 +19,12 @@ Route::get('portfolio', 'SiteController@portfolio');
 
 Route::get('services', 'SiteController@services');
 
+Route::get('single-project/{slug}', 'SiteController@project');
+
+
 
 Route::get('contact', function () {
     return view('site.contact');
-});
-
-
-Route::get('single-project', function () {
-    return view('site.single-project');
 });
 
 

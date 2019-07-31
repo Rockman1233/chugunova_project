@@ -45,4 +45,12 @@ class SiteController extends Controller
             'services' => $services
         ]);
     }
+
+    public function project($slug)
+    {
+        $project = Post::query()->where('slug',$slug)->first();
+        return view('site.single-project',[
+            'project' => $project
+        ]);
+    }
 }

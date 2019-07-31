@@ -5,7 +5,7 @@
     <!-- Top bar -->
     <div class="top-bar">
         <h1>About Me</h1>
-        <p><a href="#">Home</a> / About me</p>
+        <p><a href="#">Home</a> / Обо мне</p>
     </div>
     <!-- end Top bar -->
 
@@ -21,12 +21,11 @@
             <p>{{ $page->body }}</p>
             <div class="h-10"></div>
             <ul class="social-ul">
-                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="fa fa-facebook"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="fa fa-instagram"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="fa fa-twitter"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="fa fa-vk"></i></a></li>
             </ul>
-
 
         </div>
     </div>
