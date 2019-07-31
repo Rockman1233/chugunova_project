@@ -31,8 +31,8 @@
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>{{ $post->title }}</span>
-                                        <em>{{ $post->body }}</em>
+                                        <span>{!! $post->title !!}</span>
+                                        <em>{!! $post->title !!}</em>
                                     </div>
                                 </div>
                             </div>

@@ -23,7 +23,7 @@
         </div>
 
         <div class="col-md-9">
-            {{ $project->body }}
+            {!! $project->body !!}
         </div>
 
         <div class="col-md-3">

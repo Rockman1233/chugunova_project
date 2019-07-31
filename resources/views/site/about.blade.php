@@ -18,7 +18,7 @@
             <h3 class="uppercase">{{ $page->title }}</h3>
             <h5>{{ $page->excerpt }}</h5>
             <div class="h-30"></div>
-            <p>{{ $page->body }}</p>
+            {!! $page->body !!}
             <div class="h-10"></div>
             <ul class="social-ul">
                 <li class="box-social"><a href="#0"><i class="fa fa-facebook"></i></a></li>
