@@ -16,6 +16,7 @@
     <link href="{{ asset('ionicons/css/ionicons.min.css') }}" rel="stylesheet">
 
     <!-- main css -->
+    <link href="{{ asset('css/custom-preloader.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     <link href="{{ asset('css/_variables.scss') }}" rel="stylesheet">
@@ -41,9 +42,11 @@
     <!-- Preloader -->
     <div id="preloader">
         <div class="pre-container">
-            <div class="spinner">
-                <div class="double-bounce1"></div>
-                <div class="double-bounce2"></div>
+            <div class="preloader-container text-center">
+                <div class="dash uno"></div>
+                <div class="dash dos"></div>
+                <div class="dash tres"></div>
+                <div class="dash cuatro"></div>
             </div>
         </div>
     </div>
