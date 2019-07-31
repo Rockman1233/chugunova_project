@@ -1,7 +1,7 @@
 @section('header')
 <header class="box-header">
     <div class="box-logo">
-        <a href="/"><img src="{{ asset('img/logo.png') }}" width="80" alt="Logo"></a>
+        <a href="/"><img src="{{ asset('img/pp-01.png') }}" width="50" alt="Logo"></a>
     </div>
     <!-- box-nav -->
     <a class="box-primary-nav-trigger" href="#0">

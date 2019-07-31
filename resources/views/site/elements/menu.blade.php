@@ -1,6 +1,6 @@
 <nav>
     <ul class="box-primary-nav">
-        <li class="box-label">Меню</li>
+        <img src="{{ asset('img/prostyeprostranstva_logo_cleanbg.png') }}" alt="Logo">
 
         @php
 

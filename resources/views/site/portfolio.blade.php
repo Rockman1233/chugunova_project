@@ -1,11 +1,10 @@
 @extends('layout')
 @section('content')
 
-
     <!-- top bar -->
     <div class="top-bar">
-        <h1>portfolio</h1>
-        <p><a href="#">Home</a> / Portfolio</p>
+        <h1>Портфолио</h1>
+        <p><a href="#">Home</a> / Портфолио</p>
     </div>
     <!-- end top bar -->
 

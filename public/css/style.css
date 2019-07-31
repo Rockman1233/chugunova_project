@@ -355,10 +355,16 @@ h5 {
     list-style: none;
 }
 
+.box-primary-nav img{
+    filter: opacity(0.4) drop-shadow(0 0 0 rgb(252,255,236));
+    width: 30%;
+    margin: 0 0 20px 0;
+}
+
 .box-primary-nav li {
     font-size: 22px;
     font-size: 1.375rem;
-    font-weight: 300;
+    font-weight: 100;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: .2em 0;
@@ -377,7 +383,7 @@ h5 {
     transition: all 0.2s;
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 .box-primary-nav a:focus {
     outline: none;
@@ -391,7 +397,7 @@ h5 {
 .box-primary-nav .box-label {
     color: #ffbf00;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 17px;
     margin: 2.4em 0 .8em;
 }
