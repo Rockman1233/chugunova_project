@@ -8,18 +8,17 @@
     <!-- end footer -->
 
     <!-- back to top -->
-    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <a href="#0" class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
     <!-- end back to top -->
 
     <!--  plugins -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/animated-headline.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="{{ asset('js/menu.js') }}"></script>
+    <script src="{{ asset('js/animated-headline.js') }}"></script>
+    <script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
 
 
     <!--  custom script -->
-    <script src="js/custom.js"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
 
     <!-- google analytics  -->
     <script>

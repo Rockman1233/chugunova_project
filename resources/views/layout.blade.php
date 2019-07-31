@@ -25,7 +25,6 @@
     <script src="{{ asset('js/modernizr.js') }}"></script>
 
     <script src="{{ asset('js/animated-headline.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
     <script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
 

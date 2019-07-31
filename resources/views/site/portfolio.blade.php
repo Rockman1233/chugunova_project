@@ -38,7 +38,7 @@
                     @foreach($projects as $project)
                         <!-- single work -->
                             <div class="col-md-4 col-sm-6  {{$project->getCategory()->slug}} logo">
-                                <a href="single-project.html" class="portfolio_item">
+                                <a href="single-project/{{ $project->slug }}" class="portfolio_item">
                                     <img src="{{ Voyager::image( $project->image ) }}" alt="image" class="img-responsive" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
