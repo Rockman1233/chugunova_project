@@ -3,12 +3,25 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use App\SocialNet;
+use Illuminate\Support\Facades\View;
 use TCG\Voyager\Models\Category;
 use App\Service;
 use TCG\Voyager\Models\Page;
 
 class SiteController extends Controller
 {
+
+    public function __construct()
+    {
+        $social = SocialNet::all()->where('active', true);
+
+        // Sharing is caring
+        View::share('social', $social);
+
+    }
+
+
     public function index()
     {
         $posts = Post::all();
