@@ -21,12 +21,7 @@ Route::get('services', 'SiteController@services');
 
 Route::get('single-project/{slug}', 'SiteController@project');
 
-
-
-Route::get('contact', function () {
-    return view('site.contact');
-});
-
+Route::get('contact', 'SiteController@contact');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

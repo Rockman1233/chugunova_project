@@ -66,4 +66,9 @@ class SiteController extends Controller
             'project' => $project
         ]);
     }
+
+    public function contact()
+    {
+        return view('site.contact');
+    }
 }

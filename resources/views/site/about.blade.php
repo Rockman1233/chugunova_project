@@ -4,7 +4,7 @@
 
     <!-- Top bar -->
     <div class="top-bar">
-        <h1>About Me</h1>
+        <h1>Обо мне</h1>
         <p><a href="#">Home</a> / Обо мне</p>
     </div>
     <!-- end Top bar -->
@@ -16,7 +16,7 @@
         </div>
         <div class="col-md-6">
             <h3 class="uppercase">{{ $page->title }}</h3>
-            <h5>{{ $page->excerpt }}</h5>
+            <h4>{{ $page->excerpt }}</h4>
             <div class="h-30"></div>
             {!! $page->body !!}
             <div class="h-10"></div>

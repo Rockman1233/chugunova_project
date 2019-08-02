@@ -29,14 +29,18 @@
 
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700);
 
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap&subset=cyrillic');
+
 /* General
 ==================================================*/
 
 html,
 body {
     height: 100%;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.8;
+    /*font-family: 'Poppins', sans-serif;*/
+    font-family: 'Poiret One', sans-serif;
+    font-weight: bolder;
+    line-height: 1.5;
     color: #999
 }
 
@@ -94,7 +98,7 @@ h3 {
     color: #393939;
 }
 
-h5 {
+h4, h5 {
     color: #ffbf00;
 }
 

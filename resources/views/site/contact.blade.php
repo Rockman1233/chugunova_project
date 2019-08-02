@@ -4,8 +4,8 @@
 
     <!-- top bar -->
     <div class="top-bar">
-        <h1>contact Me</h1>
-        <p><a href="#">Home</a> / Contact Me</p>
+        <h1>контакт</h1>
+        <p><a href="#">Home</a> / контакт</p>
     </div>
     <!-- end top bar -->
 
@@ -17,29 +17,29 @@
                     <div class="col-md-6">
                         <div class="input-contact">
                             <input type="text" name="name">
-                            <span>your name</span>
+                            <span>Как к вам обращаться</span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="input-contact">
                             <input type="text" name="email">
-                            <span>your email</span>
+                            <span>E-mail</span>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="input-contact">
                             <input type="text" name="object">
-                            <span>object</span>
+                            <span>Тема</span>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="textarea-contact">
                             <textarea name="message"></textarea>
-                            <span>message</span>
+                            <span>Сообщение</span>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <a href="#" class="btn btn-box">Send</a>
+                        <a href="#" class="btn btn-box">Отправить</a>
                     </div>
                 </div>
             </form>
@@ -54,8 +54,8 @@
                 etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia-,
                 bene laudata virtus voluptatis aditus </p>
             <div class="contact-info">
-                <p><i class="ion-android-call"></i> 0100 787 3456</p>
-                <p><i class="ion-ios-email"></i> box@info.com</p>
+                <p><i class="fa fa-phone"></i> 0100 787 3456</p>
+                <p><i class="fa fa-mail-forward"></i> box@info.com</p>
             </div>
         </div>
 

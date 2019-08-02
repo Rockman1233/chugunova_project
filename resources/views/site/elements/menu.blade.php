@@ -54,7 +54,7 @@
             </li>
         @endforeach
 
-        <li class="box-label">Follow me</li>
+        <li class="box-label">Следите за нами</li>
         @foreach($social as $net)
             <li class="box-social"><a href="//{{$net->link}}"><i class="fa {{$net->icon}}"></i></a></li>
         @endforeach
