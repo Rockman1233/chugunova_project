@@ -23,6 +23,9 @@ Route::get('single-project/{slug}', 'SiteController@project');
 
 Route::get('contact', 'SiteController@contact');
 
+Route::post('get-message', 'SiteController@getMessage');
+
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

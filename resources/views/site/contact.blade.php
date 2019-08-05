@@ -12,34 +12,35 @@
     <!-- main-container -->
     <div class="container main-container">
         <div class="col-md-6">
-            <form action="#" method="post">
+            <form action="/get-message" method="post" id="contact-form">
+                {{ csrf_field() }}
                 <div class="row">
                     <div class="col-md-6">
                         <div class="input-contact">
-                            <input type="text" name="name">
+                            <input type="text" required name="name">
                             <span>Как к вам обращаться</span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="input-contact">
-                            <input type="text" name="email">
+                            <input type="text" required name="email">
                             <span>E-mail</span>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="input-contact">
-                            <input type="text" name="object">
-                            <span>Тема</span>
+                            <input type="text" name="phone">
+                            <span>Телефон</span>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="textarea-contact">
-                            <textarea name="message"></textarea>
+                            <textarea required name="text"></textarea>
                             <span>Сообщение</span>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <a href="#" class="btn btn-box">Отправить</a>
+                        <button type="submit" class="btn btn-box">Отправить</button>
                     </div>
                 </div>
             </form>

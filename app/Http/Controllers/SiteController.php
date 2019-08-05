@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Message;
 use App\Post;
 use App\SocialNet;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 use TCG\Voyager\Models\Category;
 use App\Service;
@@ -70,5 +73,10 @@ class SiteController extends Controller
     public function contact()
     {
         return view('site.contact');
+    }
+
+    public function getMessage(Request $request)
+    {
+        Message::create($request->all());
     }
 }
