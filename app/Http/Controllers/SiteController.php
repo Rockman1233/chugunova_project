@@ -36,10 +36,10 @@ class SiteController extends Controller
 
     public function about()
     {
-        $page = Page::query()->get()->where('slug','obo-mne');
+        $page = Page::query()->where('slug','obo-mne');
 
         return view('site.about', [
-            'page' => $page->get(1)
+            'page' => $page->first()
         ]);
     }
 
@@ -72,7 +72,10 @@ class SiteController extends Controller
 
     public function contact()
     {
-        return view('site.contact');
+        $page = Page::query()->where('slug','kontakt');
+        return view('site.contact', [
+            'page' => $page->first()
+        ]);
     }
 
     public function getMessage(Request $request)
