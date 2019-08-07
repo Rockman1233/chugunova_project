@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Дизайн бюро - Простые пространства</title>
+    <title>@if (@isset ($title)){{ $title }}@elseДизайн бюро - Простые пространства@endif</title>
+    <meta name="description" content="Студия дизайна интерьеров - Простые пространства@if (@isset ($description)) {{ $description }}@endif">
+    <meta name="keywords" content="дизайн решения простые пространства интерьеры москва@if (@isset ($keywords)) {{ $keywords }}@endif">
+
     <link rel="icon" href="{{ asset('img/fav.png') }}" type="image/x-icon">
 
 

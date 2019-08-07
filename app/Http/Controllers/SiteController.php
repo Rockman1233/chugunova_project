@@ -65,6 +65,17 @@ class SiteController extends Controller
     public function project($slug)
     {
         $project = Post::query()->where('slug',$slug)->first();
+
+        // Добавим мета-данные к главному шаблону
+        view()->composer('layout', function($view) use ($project)
+        {
+            $view->with([
+                'title' => $project->title,
+                'keywords' => $project->meta_keywords,
+                'description' => $project->meta_description
+            ]);
+        });
+
         return view('site.single-project',[
             'project' => $project
         ]);
