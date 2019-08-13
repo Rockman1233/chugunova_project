@@ -12,10 +12,31 @@
     <!-- main-container -->
     <div class="container main-container">
         <div class="col-md-12">
-            <img src="{{ Voyager::image( $project->image ) }}" alt="" class="img-responsive" />
-            <div class="h-30"></div>
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="{{ Voyager::image( $project->image ) }}" alt="Slide 1">
+                    </div>
+                    <div class="item">
+                        <img src="{{ Voyager::image( $project->image ) }}" alt="Slide 2">
+                    </div>
+                    <div class="item">
+                        <img src="{{ Voyager::image( $project->image ) }}" alt="Slide 3">
+                    </div>
+                </div>
+                <a href="#carousel" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#carousel" class="right carousel-control" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
         </div>
-
         <div class="col-md-12">
             <h3 class="text-uppercase">{{ $project->title }}</h3>
             <h5>{{ $project->excerpt }}</h5>
@@ -41,5 +62,7 @@
         </div>
     </div>
     <!-- end main-container -->
+
+
 
 @endsection

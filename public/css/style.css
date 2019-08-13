@@ -1121,3 +1121,11 @@ textarea:focus {
         line-height: 30px;
     }
 }
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    display: block;
+    height: 80%;
+    max-width: 100%;
+    line-height: 1;
+    width: 100%;
+}

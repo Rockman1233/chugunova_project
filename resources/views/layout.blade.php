@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
     <meta name="description" content="Студия дизайна интерьеров - Простые пространства@if (@isset ($description)) {{ $description }}@endif">
     <meta name="keywords" content="дизайн решения простые пространства интерьеры москва@if (@isset ($keywords)) {{ $keywords }}@endif">
 
-    <link rel="icon" href="{{ asset('img/fav.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('img/pp-01.png') }}" type="image/x-icon">
 
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
