@@ -61,3 +61,12 @@ $(window).load(function () {
         }
     });
 });
+
+// Анимирование изменения высоты картинки в карусели
+/*
+$('#carousel').bind('slide.bs.carousel', function (e) {
+    var nextH = $(e.relatedTarget).height();
+    $(this).find('.active.item').parent().animate({
+        height: nextH
+    }, 200);
+});*/

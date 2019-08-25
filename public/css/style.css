@@ -1124,8 +1124,18 @@ textarea:focus {
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     display: block;
-    height: 80%;
     max-width: 100%;
     line-height: 1;
     width: 100%;
+}
+
+.carousel-inner .item {
+    opacity: 0;
+    transition: none;
+    transform: translate3d(0,0,0) !important;
+}
+
+.carousel-inner .active {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
 }
