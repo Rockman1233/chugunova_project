@@ -13,28 +13,35 @@
     <div class="container main-container">
         <div class="col-md-12">
             <div id="carousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel" data-slide-to="0"></li>
-                    <li data-target="#carousel" data-slide-to="1"></li>
-                    <li data-target="#carousel" data-slide-to="2"></li>
-                </ol>
+                @if(isset($project->images))
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0"></li>
+                        @foreach($project->images as $indx => $image)
+                            <li data-target="#carousel" data-slide-to="{{ $indx + 1 }}"></li>
+                        @endforeach
+                    </ol>
+                @endif
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="{{ Voyager::image( $project->image ) }}" alt="Slide 1">
+                        <img src="{{ Voyager::image( $project->image ) }}" alt="Slide 0">
                     </div>
-                    <div class="item">
-                        <img src="{{ Voyager::image( $project->image ) }}" alt="Slide 2">
-                    </div>
-                    <div class="item">
-                        <img src="{{ Voyager::image( $project->image ) }}" alt="Slide 3">
-                    </div>
+                    @if(isset($project->images))
+                        @foreach($project->images as $indx => $image)
+                            <div class="item">
+                                <img src="{{ Voyager::image( $image ) }}" alt="Slide {{ $indx + 1 }}">
+                            </div>
+                        @endforeach
+                    @endif
                 </div>
-                <a href="#carousel" class="left carousel-control" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a href="#carousel" class="right carousel-control" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
+                @if(isset($project->images))
+                    <a href="#carousel" class="left carousel-control" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a href="#carousel" class="right carousel-control" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                @endif
+
             </div>
         </div>
         <div class="col-md-12">

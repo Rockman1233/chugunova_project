@@ -66,6 +66,9 @@ class SiteController extends Controller
     {
         $project = Post::query()->where('slug',$slug)->first();
 
+        // Переводим JSON с картинками в массив
+        $project->images = json_decode($project->images);
+
         // Добавим мета-данные к главному шаблону
         view()->composer('layout', function($view) use ($project)
         {
